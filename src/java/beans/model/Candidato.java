@@ -5,14 +5,15 @@
  */
 package beans.model;
 
-import javax.inject.Named;
-import javax.enterprise.context.RequestScoped;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
+
 
 /**
  *
  * @author Desarrollo2
  */
-@Named(value = "candidato")
+@ManagedBean
 @RequestScoped
 public class Candidato {
 
@@ -22,7 +23,7 @@ public class Candidato {
     public Candidato() {
     }
     
-    private String nombre = "escribirsd  nombre";
+    private String nombre;
 
     /**
      * Get the value of nombre
